@@ -1,0 +1,86 @@
+/* Base */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+  --br: 15px;
+  --primary-blue: rgb(201 226 230);
+  --darker-blue: #2e839f;
+  --light-orange: #e5c5ac;
+  --basic-white: #fff;
+}
+
+body {
+  margin-bottom: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Container */
+
+div.card-container {
+  padding: 20px;
+}
+
+header {
+  padding: 20px 20px 0 20px;
+  color: var(--darker-blue);
+}
+
+/* Navbar */
+
+nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--basic-white);
+  padding: 20px;
+  border-top: 1px solid var(--primary-blue);
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--darker-blue);
+}
+
+/* Card */
+
+section.card {
+  background-color: var(--primary-blue);
+  border-radius: var(--br);
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+section.card img {
+  width: 100%;
+  margin: 10px 0;
+}
+
+section.card button {
+  margin-top: 10px;
+  background-color: var(--light-orange);
+  padding: 10px 15px;
+  border: none;
+  border-radius: var(--br);
+}
+
+/* Media queries */
+
+/* Tablets: Iteration 1 and 2*/
+
+
+/* Desktop: Iteration 3 */
+
+
+/* Bigger screens: Iteration 4 */
