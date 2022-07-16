@@ -13,6 +13,7 @@
   --darker-blue: #2e839f;
   --light-orange: #e5c5ac;
   --basic-white: #fff;
+  --main-gap: 20px
 }
 
 body {
@@ -75,12 +76,39 @@ section.card button {
   border-radius: var(--br);
 }
 
+
 /* Media queries */
+@media (min-width: 568px){
+  .header{
+    text-align: center;
+  }
+  .section.card{
+    width: calc(50% - var(--main-gap)/2);
+  }
+  .div.card-container{
+    max-width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--main-gap);
+    margin: auto;
+  }
+
+}
 
 /* Tablets: Iteration 1 and 2*/
 
 
 /* Desktop: Iteration 3 */
+@media(min-width: 1024px){
+  .section.card{
+    width: calc(33% - var(--main-gap)*2/3)
+  }
+}
 
 
 /* Bigger screens: Iteration 4 */
+@media(min-width: 1300px){
+  .section.card{
+    width: calc(25% - var(--main-gap) *3/4)
+  }
+}
